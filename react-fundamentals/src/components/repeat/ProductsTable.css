@@ -1,0 +1,16 @@
+.ProductsTable th{
+    background-color: #ABB2B9;
+    color: azure;
+}
+
+.ProductsTable table{
+    width: 100%;
+}
+
+.ProductsTable .Pair{
+    background-color: #ddd;
+}
+
+.ProductsTable .Odd{
+    background-color: #ffffff;
+}

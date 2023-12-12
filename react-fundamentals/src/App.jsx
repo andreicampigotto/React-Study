@@ -8,7 +8,9 @@ import Card from "./components/layouts/Card";
 import Family from "./components/basics/Family";
 import FamilyMember from "./components/basics/FamilyMember";
 import "./App.css";
-import ListStudents from "./components/repeat/listStudents";
+import ListStudents from "./components/repeat/ListStudents";
+import ProductsTable from "./components/repeat/ProductsTable";
+
 
 export default (_) => (
   <div className="App">
@@ -39,10 +41,14 @@ export default (_) => (
         </Family>
       </Card>
 
-      <Card title="06 Repeat" color="#85929E">
+      <Card title="06 Repeat" color="#F5B7B1">
         <ListStudents>
 
         </ListStudents>
+      </Card>
+
+      <Card title="07 Challange" color="#5D6D7E">
+        <ProductsTable/>
       </Card>
     </div>
   </div>
