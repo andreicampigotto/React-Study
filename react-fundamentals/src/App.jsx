@@ -8,8 +8,11 @@ import Card from "./components/layouts/Card";
 import Family from "./components/basics/Family";
 import FamilyMember from "./components/basics/FamilyMember";
 import "./App.css";
-import ListStudents from "./components/repeat/ListStudents";
-import ProductsTable from "./components/repeat/ProductsTable";
+import ListStudents from "./components/repeats/ListStudents";
+import ProductsTable from "./components/repeats/ProductsTable";
+import PairorOdd from "./components/conditionals/PairorOdd";
+import UserInfo from "./components/conditionals/UserInfo";
+
 
 
 export default (_) => (
@@ -50,6 +53,13 @@ export default (_) => (
       <Card title="07 Challange" color="#5D6D7E">
         <ProductsTable/>
       </Card>
+
+      <Card title="08 Conditionals renderization" color="#943126">
+        <PairorOdd number={3}/>
+        <UserInfo userName={{name: 'UserName'}}/>
+        <UserInfo />
+      </Card>
+
     </div>
   </div>
 );
