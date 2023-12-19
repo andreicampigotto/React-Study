@@ -12,6 +12,8 @@ import ListStudents from "./components/repeats/ListStudents";
 import ProductsTable from "./components/repeats/ProductsTable";
 import PairorOdd from "./components/conditionals/PairorOdd";
 import UserInfo from "./components/conditionals/UserInfo";
+import DirectFather from "./components/comunications/DirectFather";
+import IndirectFather from "./components/comunications/IndirectFather";
 
 
 
@@ -44,20 +46,28 @@ export default (_) => (
         </Family>
       </Card>
 
-      <Card title="06 Repeat" color="#F5B7B1">
+      <Card title="#06 Repeat" color="#F5B7B1">
         <ListStudents>
 
         </ListStudents>
       </Card>
 
-      <Card title="07 Challange" color="#5D6D7E">
+      <Card title="#07 Challange" color="#5D6D7E">
         <ProductsTable/>
       </Card>
 
-      <Card title="08 Conditionals renderization" color="#943126">
+      <Card title="#08 Conditionals renderization" color="#943126">
         <PairorOdd number={3}/>
         <UserInfo userName={{name: 'UserName'}}/>
         <UserInfo />
+      </Card>
+
+      <Card title="#09 Direct comunications" color="#7D6608">
+        <DirectFather/>
+      </Card>
+
+      <Card title="#10 Indirect comunication" color="#ABEBC6">
+        <IndirectFather/>
       </Card>
 
     </div>
