@@ -14,8 +14,7 @@ import PairorOdd from "./components/conditionals/PairorOdd";
 import UserInfo from "./components/conditionals/UserInfo";
 import DirectFather from "./components/comunications/DirectFather";
 import IndirectFather from "./components/comunications/IndirectFather";
-
-
+import Input from "./components/forms/Input";
 
 export default (_) => (
   <div className="App">
@@ -68,6 +67,10 @@ export default (_) => (
 
       <Card title="#10 Indirect comunication" color="#ABEBC6">
         <IndirectFather/>
+      </Card>
+
+      <Card title="#11 Controled component" color="#34495E">
+        <Input/>
       </Card>
 
     </div>
