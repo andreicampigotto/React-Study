@@ -1,5 +1,8 @@
 import "./Counter.css"
 import React,{Component} from "react";
+import Display from "./Display";
+import Buttons from "./Buttons";
+import PitchForm from "./PitchForm";
 
  class Counter extends Component{ 
 
@@ -51,9 +54,9 @@ import React,{Component} from "react";
     //     this.inc = this.inc.bind(this)
     // }
 
-    setPitch = (e) =>{
+    setPitch = (newPitch) =>{
         this.setState({
-            pitch: +e.target.value,
+            pitch: newPitch,
         })
     }
 
@@ -62,20 +65,15 @@ import React,{Component} from "react";
             <div className="Counter">
                 <h2>Counter</h2>
                 {/* <p>Initial value: {this.state.num}</p> */}
-                {/* <button onClick={_=> this.inc()} >+</button> */}
-                <button onClick={this.inc}>+</button>
-                <button onClick={this.dec}>-</button>
-                <h3>Current number {this.state.num}</h3>
-                <div>
-                    <label htmlFor="pitchInput"> Pitch</label>
-                    <input id="pitchInput" 
-                    type="text" 
-                    value={this.state.pitch} 
-                    onChange={this.setPitch}/>
-                </div>
-                <button onClick={this.incPitch}> + pitch</button>
-                <button onClick={this.decPitch}> - pitch</button>
-                <h3>Pitch number  {this.state.pitch}</h3>
+                {/* <button onClick={_=> this.inc()} >+</button> */}                
+                <Display num={this.state.num}/>
+                <PitchForm pitch={this.state.pitch} setPitch={this.setPitch}/>
+
+                <Buttons setInc={this.inc} 
+                setDec={this.dec}
+                setIncPitch={this.incPitch}
+                setDecPitch={this.decPitch}/>
+                
             </div>
         )
     }
