@@ -15,6 +15,7 @@ import UserInfo from "./components/conditionals/UserInfo";
 import DirectFather from "./components/comunications/DirectFather";
 import IndirectFather from "./components/comunications/IndirectFather";
 import Input from "./components/forms/Input";
+import Counter from "./components/counter/Counter";
 
 export default (_) => (
   <div className="App">
@@ -71,6 +72,10 @@ export default (_) => (
 
       <Card title="#11 Controled component" color="#34495E">
         <Input/>
+      </Card>
+
+      <Card title="#12 Counter" color="#FCF3CF">
+        <Counter initialNumber={10}/>
       </Card>
 
     </div>
